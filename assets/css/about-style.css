@@ -1,0 +1,380 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111111;
+  color: white;
+  font-family: "Open Sans";
+  overflow-x: hidden;
+}
+
+body > section.container,
+body .container-fluid > .container {
+  margin-right: 2em;
+}
+
+.heading-title {
+  font-family: "Poppins";
+  font-size: 65px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  line-height: 1.5em;
+}
+
+.heading-title span {
+  color: var(--template-voilet);
+}
+
+.title-bg {
+  transform: translateY(-85%);
+  font-size: 110px;
+  font-weight: 800;
+  color: #e2e2e226;
+  z-index: -20;
+  letter-spacing: 8px;
+  position: absolute;
+  left: 0;
+  top: 47%;
+  right: 0;
+  width: auto;
+  margin: auto;
+}
+
+.heading-desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  line-height: 1.4em;
+  font-weight: 400;
+  color: #d1d1d1;
+}
+
+@media screen and (max-width: 768px) {
+  .heading-title {
+    line-height: 1em;
+    margin-top: 2em;
+  }
+
+  .title-bg {
+    top: 35%;
+    margin-top: 0.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading-title {
+    font-size: 55px;
+  }
+
+  .title-bg {
+    margin-top: 2em;
+    top: 5%;
+    font-size: 56px;
+    letter-spacing: 0px;
+  }
+}
+
+/* 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+*/
+/* ========== FIRST SECTION / INFOS SECTION */
+#sec-infos {
+  margin-top: 3em;
+}
+
+#sec-infos .info-title h4 {
+  font-family: "Poppins";
+}
+
+#sec-infos .infos-list .list-item {
+  padding: 6px 0px;
+}
+
+#sec-infos .infos-list .list-item span {
+  color: gray;
+}
+
+#sec-infos .download-cv {
+  width: 40%;
+  height: 50px;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+#sec-infos .infos-second-col .info-box {
+  border: 1px solid var(--template-voilet);
+  border-radius: 4px;
+  max-width: 48%;
+  padding: 1.5em 4em;
+  transition: all 0.3s linear;
+}
+
+#sec-infos .infos-second-col .info-box:hover {
+  background-color: white;
+  transform: scale(1.05);
+  color: black;
+}
+
+#sec-infos .infos-second-col .info-box h2 {
+  font-family: "Poppins";
+  font-size: 45px;
+  font-weight: bold;
+}
+
+#sec-infos .infos-second-col .info-box p {
+  margin: 0px;
+  padding-left: 8px;
+}
+
+#sec-infos .infos-second-col .info-box .divider {
+  width: 25%;
+  height: 3px;
+  background-color: var(--template-voilet);
+  opacity: 1;
+}
+
+#sec-infos .download-cv {
+  background-color: var(--template-voilet);
+  border: 2px solid var(--template-voilet);
+  transition: all 0.3s linear;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+
+#sec-infos .download-cv:hover {
+  background-color: white;
+  color: black;
+}
+
+#sec-infos svg {
+  position: absolute;
+  bottom: 10px;
+  left: 32%;
+  animation: scroll-down ease-in 1.5s infinite both running;
+}
+
+.download-cv a {
+  text-decoration: none;
+  font-family: "Poppins";
+  color: white;
+}
+
+.download-cv a:hover {
+  color: black;
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+    bottom: 30px;
+  }
+
+  50% {
+    opacity: 1;
+    bottom: 10px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #sec-infos .download-cv {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #sec-infos .info-title {
+    text-align: center;
+  }
+
+  #sec-infos .list-group {
+    padding-left: 3em;
+  }
+  #sec-infos .list-group .list-item span {
+    padding-left: 3em !important;
+  }
+
+  #sec-infos .download-cv {
+    margin: 20px auto;
+    width: 60%;
+  }
+
+  #sec-infos .infos-second-col .info-box {
+    max-width: 75%;
+    margin: 15px auto;
+  }
+
+  #sec-infos svg {
+    transform: translateY(96px) !important;
+    left: 39%;
+  }
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/* ================= Skills SECTION ================= */
+#sec-skills .progress {
+  height: 20px;
+  border-radius: 2px;
+}
+
+#sec-skills .progress .progress-bar {
+  background-color: var(--template-voilet);
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+*/
+/* =================== About Page EXPERIENCE and EDUCATION SECTION */
+#about-page-exp-edu-sec .resume-box .resume-title {
+  font-family: "Poppins";
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 0.7em;
+}
+
+#about-page-exp-edu-sec .resume-box .title-professional-experience {
+  margin-top: 3em;
+}
+
+#about-page-exp-edu-sec .resume-box .job-details li {
+  padding-left: 0em;
+  margin-bottom: 0.2em;
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+
+#about-page-exp-edu-sec .resume-box > ul {
+  list-style-type: none;
+}
+
+#about-page-exp-edu-sec .resume-box > ul li {
+  padding-left: 5em;
+  margin: 0em 0 02em 0;
+}
+
+#about-page-exp-edu-sec .resume-box > ul li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  border-left: 1px solid #333;
+  z-index: -1;
+}
+
+#about-page-exp-edu-sec .resume-box > ul li div.icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#about-page-exp-edu-sec .resume-box > ul li div.icon i {
+  font-size: 24px;
+  background-color: var(--template-voilet);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  padding: 12px;
+  margin-right: 14px;
+  margin-top: -10px;
+  z-index: 5;
+  color: white;
+}
+
+#about-page-exp-edu-sec .resume-box > ul li .time {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 25px;
+  background: gray;
+}
+
+#about-page-exp-edu-sec .resume-box .designation {
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+}
+
+#about-page-exp-edu-sec .resume-box .designation h4 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+
+#about-page-exp-edu-sec .resume-box .designation hr.separator {
+  width: 6%;
+  margin: auto 10px;
+  height: 3px;
+  background: white;
+  color: white;
+  opacity: 0.8;
+}
+
+#about-page-exp-edu-sec .resume-box p {
+  font-size: 13px;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 768px) {
+  #about-page-exp-edu-sec .resume-box .job-details li {
+    padding-left: 10px !important;
+  }
+
+  #about-page-exp-edu-sec .resume-box > ul li {
+    padding-left: 4em !important;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  #about-page-exp-edu-sec .resume-box > ul {
+    padding-left: 0px;
+  }
+
+  #about-page-exp-edu-sec .resume-box .title-education {
+    margin-top: 60px;
+  }
+}

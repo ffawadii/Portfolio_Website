@@ -1,0 +1,145 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111111;
+  color: white;
+  font-family: "Open Sans";
+  overflow-x: hidden;
+}
+
+body > section.container,
+body .container-fluid > .container {
+  margin-right: 2em;
+}
+
+.heading-title {
+  font-family: "Poppins";
+  font-size: 65px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  line-height: 1.5em;
+}
+
+.heading-title span {
+  color: var(--template-voilet);
+}
+
+.title-bg {
+  transform: translateY(-85%);
+  font-size: 110px;
+  font-weight: 800;
+  color: #e2e2e226;
+  z-index: -20;
+  letter-spacing: 8px;
+  position: absolute;
+  left: 0;
+  top: 47%;
+  right: 0;
+  width: auto;
+  margin: auto;
+}
+
+.heading-desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  line-height: 1.4em;
+  font-weight: 400;
+  color: #d1d1d1;
+}
+
+@media screen and (max-width: 768px) {
+  .heading-title {
+    line-height: 1em;
+    margin-top: 2em;
+  }
+
+  .title-bg {
+    top: 35%;
+    margin-top: 0.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading-title {
+    font-size: 55px;
+  }
+
+  .title-bg {
+    margin-top: 2em;
+    top: 5%;
+    font-size: 56px;
+    letter-spacing: 0px;
+  }
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+/* ==================== Services SECTION ================= */
+#sec-services .card-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 10px;
+  margin: 15px 10px;
+  width: 31%;
+  border: 1px solid var(--template-voilet);
+  border-radius: 4px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all 0.25s linear;
+}
+
+#sec-services .card-box:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background-color: white;
+  transform: translateY(-5px);
+  color: black;
+  border-radius: 0px;
+}
+
+#sec-services .card-box i {
+  font-size: 55px;
+  padding-bottom: 12px;
+  color: var(--template-voilet);
+}
+
+#sec-services .card-box .card-content h4 {
+  font-family: "Poppins";
+  font-size: 25px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  #sec-services .card-box {
+    width: 45%;
+    margin: 15px 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #sec-services .card-box {
+    width: 86%;
+    margin: 15px auto;
+  }
+}

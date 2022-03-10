@@ -1,0 +1,164 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111111;
+  color: white;
+  font-family: "Open Sans";
+}
+
+body > section.container,
+body .container-fluid > .container {
+  margin-right: 2em;
+}
+
+.heading-title {
+  font-family: "Poppins";
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  line-height: 1.5em;
+}
+
+.title-bg {
+  transform: translateY(-85%);
+  font-size: 110px;
+  font-weight: 800;
+  color: #e2e2e226;
+  z-index: -20;
+  letter-spacing: 8px;
+  position: absolute;
+  left: 0;
+  top: 43%;
+  right: 0;
+  width: auto;
+  margin: auto;
+}
+
+.heading-desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  line-height: 1.4em;
+  font-weight: 400;
+  color: #d1d1d1;
+}
+
+@media screen and (max-width: 768px) {
+  .heading-title {
+    line-height: 1em;
+    margin-top: 2em;
+  }
+
+  .title-bg {
+    top: 35%;
+    margin-top: 0.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading-title {
+    font-size: 55px;
+  }
+
+  .title-bg {
+    top: 5%;
+    font-size: 60px;
+    letter-spacing: 0px;
+    margin-top: 2em;
+  }
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/* =========== Portfolio Section ============== */
+
+.gallery-title {
+  font-size: 36px;
+  color: #42b32f;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 70px;
+}
+
+.gallery-title:after {
+  content: "";
+  position: absolute;
+  width: 7.5%;
+  left: 46.5%;
+  height: 45px;
+  border-bottom: 1px solid #5e5e5e;
+}
+
+.filter-button {
+  font-size: 18px;
+  border: 1px solid var(--template-voilet);
+  color: var(--template-voilet);
+  margin: auto 5px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.filter-button:hover {
+  font-size: 18px;
+  border: 1px solid var(--template-voilet);
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+.btn-default:active .filter-button:active {
+  background-color: white !important;
+  color: black !important;
+}
+
+.port-image {
+  width: 100%;
+}
+
+.gallery_product {
+  margin-bottom: 30px;
+}
+
+#sec-portfolio .gallery_product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  #sec-portfolio .filter-button {
+    border: 1px solid var(--template-voilet);
+    color: var(--template-voilet);
+    margin: auto 5px;
+  }
+
+  #sec-portfolio .gallery_product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .filter-button {
+    margin: 5px 5px !important;
+  }
+}

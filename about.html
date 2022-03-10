@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png"/>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    
+    <!-- JQuery CDN LINK -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Bootstrap CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- FontAwesome Icons CDN -->
+    <!-- <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/2066f9fcda.js" crossorigin="anonymous"></script>
+
+    <!-- TYPED JS CDN LINK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
+
+    <!-- Document Main CSS File -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/about-style.css">
+
+</head>
+
+<body>
+    
+    <!-- HEADER -->
+    <header id="header">
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/images/favicon.png" width="60" alt=""></a>
+        </div>
+        <div class="menu-links">
+            <ul>
+              <li><i class="fas fa-home"></i><a href="./index.html">Home</a></li>
+              <li><i class="far fa-user"></i><a href="./about.html">About</a></li>
+              <li><i class="far fa-file"></i><a href="#about-page-exp-edu-sec">Resume</a></li>
+              <li><i class="fas fa-book-open"></i><a href="./portfolio.html">Portfolio</a></li>
+              <li><i class="fas fa-server"></i><a href="./services.html">Services</a></li>
+              <li><i class="fas fa-envelope"></i><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="download-cv">
+            <a href="https://fawad.digitalstudio.agency/wp-content/uploads/2021/12/Creative-CV-design.docx">
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Download CV">
+                    <i class="fas fa-download"></i>
+                </button>
+            </a>
+        </div>
+    </header>
+    <!-- Mobile Header -->
+    <nav id="mobile-nav">
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/images/favicon.png" width="60" alt=""></a>
+        </div>
+        <div id="mobile-nav-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+<!-- About Page Title Section -->
+    <section class="container" id="about-page">
+        <div class="row pt-5 pb-3">
+            <div class="col-12 position-relative">
+                <h2 class="heading-title about-page-heading about-heading text-center">About <span>ME</span></h2>
+                <h2 class="title-bg text-center">ABOUT</h2>
+                <p class="heading-desc contact-desc text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident rerum harum hic, fuga iure exercitationem reprehenderit nobis at reiciendis ipsam amet, quo pariatur? Consequatur cum nobis numquam ipsam nihil magnam dolor eveniet, consectetur aliquam ipsum labore veritatis qui, voluptas autem. Obcaecati qui ducimus dicta assumenda doloremque sed amet minima accusantium?</p>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- About Page  first/ Info Section -->
+    
+    <section class="container position-relative" id="sec-infos">
+        <div class="row">
+            <div class="infos-first-col col-md-5">
+                <div class="row h-100">
+                    <div class="info-title col-12 mx-auto text-left">
+                        <h4>Personal Info</h4>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="infos-list list-group">
+                            <div class="list-item">First Name: <span class="px-2">John</span></div>
+                            <div class="list-item">Age: <span class="px-2">27 Years</span></div>
+                            <div class="list-item">Freelance: <span class="px-2">Available</span></div>
+                            <div class="list-item">Phone: <span class="px-2">+21621184010</span></div>
+                            <div class="list-item">Skype: <span class="px-2">John.doe</span></div>
+                        </div>
+                    </div>
+                    <div class="info-list col-sm-6">
+                        <div class="infos-list list-group">
+                            <div class="list-item">Last Name: <span class="px-2">Doe</span></div>
+                            <div class="list-item">Nationality: <span class="px-2">American</span></div>
+                            <div class="list-item">Address: <span class="px-2">NY America</span></div>
+                            <div class="list-item">Email: <span class="px-2">hi@example.com</span></div>
+                            <div class="list-item">Languages: <span class="px-2">English, Spanish</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-start align-items-end">
+                       
+                            <button class="download-cv btn btn-warning"> <a href="https://fawad.digitalstudio.agency/wp-content/uploads/2021/12/Creative-CV-design.docx">Download CV</a></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="infos-second-col col-md-7">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class="info-box info-exp-box col-md-6">
+                        <h2>12<sup>+</sup></h2>
+                        <span class="d-flex justify-content-start align-items-baseline">
+                            <hr class="divider p-0 m-0">
+                            <p>YEARS OF <br>Experience</p>
+                        </span>
+                    </div>
+                    <div class="info-box info-projects-box col-md-6">
+                        <h2>97<sup>+</sup></h2>
+                        <span class="d-flex justify-content-start align-items-baseline">
+                            <hr class="divider p-0 m-0">
+                            <p>Projects <br>Completed</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-between align-items-center mt-4">
+                    <div class="info-box info-exp-box col-md-6">
+                        <h2>80<sup>+</sup></h2>
+                        <span class="d-flex justify-content-start align-items-baseline">
+                            <hr class="divider p-0 m-0">
+                            <p>Happy<br>Clients</p>
+                        </span>
+                    </div>
+                    <div class="info-box info-projects-box col-md-6">
+                        <h2>20<sup>+</sup></h2>
+                        <span class="d-flex justify-content-start align-items-baseline">
+                            <hr class="divider p-0 m-0">
+                            <p>Awards<br> Won</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg height='80px' width='80px'  fill="#ffffff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 90 90" enable-background="new 0 0 90 90" xml:space="preserve">
+            <circle cx="45" cy="13" r="3"></circle>
+            <path d="M45,0.5c-8.284,0-15,6.717-15,15.002v24.996C30,48.783,36.716,55.5,45,55.5s15-6.717,15-15.002V15.502  C60,7.217,53.284,0.5,45,0.5z M58,40.498C58,47.667,52.168,53.5,45,53.5c-7.168,0-13-5.833-13-13.002V15.502  C32,8.333,37.832,2.5,45,2.5c7.168,0,13,5.833,13,13.002V40.498z"></path>
+            <path d="M58.293,59.793L45,73.086L31.707,59.793c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l14,14  C44.488,75.402,44.744,75.5,45,75.5s0.512-0.098,0.707-0.293l14-14c0.391-0.391,0.391-1.023,0-1.414S58.684,59.402,58.293,59.793z"></path>
+            <path d="M58.293,73.793L45,87.086L31.707,73.793c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l14,14  C44.488,89.402,44.744,89.5,45,89.5s0.512-0.098,0.707-0.293l14-14c0.391-0.391,0.391-1.023,0-1.414S58.684,73.402,58.293,73.793z"></path>
+        </svg>
+    </section>
+
+
+
+
+
+<div class="contanier spacer">
+        <div class="row py-5"></div>
+</div>
+    
+
+
+
+
+
+
+
+
+
+<!-- About Page My SKILLS Section -->
+<section class="container" id="about-page-skills-sec">
+    <div class="row pt-5 pb-3">
+        <div class="col-12 position-relative">
+            <h2 class="heading-title about-page-heading text-center">My <span>Skills</span></h2>
+            <h2 class="title-bg text-center">SKILLS</h2>
+            <p class="heading-desc skills-desc text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident rerum harum hic, fuga iure exercitationem reprehenderit nobis at reiciendis ipsam amet, quo pariatur? Consequatur cum nobis numquam ipsam nihil magnam dolor eveniet, consectetur aliquam ipsum labore veritatis qui, voluptas autem. Obcaecati qui ducimus dicta assumenda doloremque sed amet minima accusantium?</p>
+        </div>
+    </div>
+</section>
+
+<!-- ====================  Skills Section ================= -->
+<section class="section-three container" id="sec-skills">
+    <div class="row">
+        <div class="col-md-6">
+            <span class="progress-item">
+                <label>HTML</label>
+                <div class="progress my-2">
+                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+            </span>
+            <span class="progress-item">
+                <label>CSS</label>
+                <div class="progress my-2">
+                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+            </span>
+            <span class="progress-item">
+                <label>PHP</label>
+                <div class="progress my-2">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+            </span>
+            <span class="progress-item">
+                <label>JAVASCRIPT</label>
+                <div class="progress my-2">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+            </span>
+        </div>
+        <div class="col-md-6">
+            <span class="progress-item">
+                <label>WORDPRESS</label>
+                <div class="progress my-2">
+                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+            </span>
+            <span class="progress-item">
+                <label>PHOTOSHOP</label>
+                <div class="progress my-2">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+            </span>
+            <span class="progress-item">
+                <label>FIGMA</label>
+                <div class="progress my-2">
+                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+                </div>
+            </span>
+            <span class="progress-item">
+                <label>ADOBE XD</label>
+                <div class="progress my-2">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+            </span>
+        </div>
+    </div>
+</section>
+
+
+
+<div class="contanier spacer">
+    <div class="row py-5"></div>
+</div>
+
+
+<!-- About Page My EXPERIENCE and Education Section -->
+<section class="container" id="about-page-exp-edu-sec">
+    <div class="row pt-5 pb-3">
+        <div class="col-12 position-relative">
+            <h2 class="heading-title about-page-heading text-center">Experience & <span>Education</span></h2>
+            <h2 class="title-bg text-center">EDUCATION</h2>
+            <p class="heading-desc skills-desc text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident rerum harum hic, fuga iure exercitationem reprehenderit nobis at reiciendis ipsam amet, quo pariatur? Consequatur cum nobis numquam ipsam nihil magnam dolor eveniet, consectetur aliquam ipsum labore veritatis qui, voluptas autem. Obcaecati qui ducimus dicta assumenda doloremque sed amet minima accusantium?</p>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="resume-box">
+                    <ul>
+                        <h2 class="resume-title title-summary">Summary</h2>
+                        <li class="position-relative">
+                            <div class="icon">
+                                <i class="far fa-file-alt"></i>
+                            </div>
+                            <!-- <span class="time">2018-Present</span> -->
+                            <!-- <div class="designation">
+                                <h4>Web Developer</h4>
+                                <hr class="separator">
+                                <h4>Envato</h4>
+                            </div> -->
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere quis atque illum quae id? Excepturi in ratione accusantium commodi illo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi libero doloribus veniam. Odit minima et cupiditate esse tempore possimus in. Magnam, numquam officia. Quia, culpa accusantium.</p>
+                        </li>
+                        
+                        <h2 class="resume-title title-professional-experience">Professional Experience</h2>
+                        <li class="position-relative">
+                            <div class="icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <span class="time">2018-Present</span>
+                            <div class="designation">
+                                <h4>Web Developer</h4>
+                                <hr class="separator">
+                                <h4>Envato</h4>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, numquam officia. Quia, culpa accusantium.</p>
+                            <ul class="job-details">
+                                <li class="job-point">Details point 1</li>
+                                <li class="job-point">Details point 2</li>
+                                <li class="job-point">Details point 3</li>
+                            </ul>
+                        </li>
+                        <li class="position-relative">
+                            <div class="icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <span class="time">2016-2018</span>
+                            <div class="designation">
+                                <h4>Web Developer</h4>
+                                <hr class="separator">
+                                <h4>Envato</h4>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, numquam officia. Quia, culpa accusantium.</p>
+                            <ul class="job-details">
+                                <li class="job-point">Details point 1</li>
+                                <li class="job-point">Details point 2</li>
+                                <li class="job-point">Details point 3</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="resume-box">
+                    <ul>
+                        
+                        <h2 class="resume-title title-education">Education</h2>
+                        <li class="position-relative">
+                            <div class="icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <span class="time">2012-2016</span>
+                            <div class="designation">
+                                <h4>BS CS</h4>
+                                <hr class="separator">
+                                <h4>University Name</h4>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, numquam officia. Quia, culpa accusantium.</p>
+                        </li>
+                        <li class="position-relative">
+                            <div class="icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <span class="time">2010-2012</span>
+                            <div class="designation">
+                                <h4>Intermediate</h4>
+                                <hr class="separator">
+                                <h4>College Name</h4>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, numquam officia. Quia, culpa accusantium.</p>
+                        </li>
+                        <li class="position-relative">
+                            <div class="icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <span class="time">2008-2010</span>
+                            <div class="designation">
+                                <h4>Matriculation</h4>
+                                <hr class="separator">
+                                <h4>School Name</h4>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, numquam officia. Quia, culpa accusantium.</p>
+                        </li>
+                        <li class="position-relative">
+                            <div class="icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <span class="time">2004-2008</span>
+                            <div class="designation">
+                                <h4>Primary Education</h4>
+                                <hr class="separator">
+                                <h4>School Name</h4>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, numquam officia. Quia, culpa accusantium.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</section>
+
+
+
+
+
+
+<!-- WEBSITE SCRIPT FILE -->
+<script src="./assets/JS/scripts.js"></script>
+<!-- TYPING EFFECT JS CODE -->
+    <script>
+        var type= new Typed('#typed',{
+            stringsElement: '#typed-strings',
+            typeSpeed: 50,
+            startDelay: 2000,
+            backSpeed: 40,
+            loop: true,
+            loopCount: 1000,
+            showCursor: true,
+
+        })
+    </script>
+<!-- Bootstrap JS cdn links -->
+    <script src="./assets/JS/particles.js"></script>
+    <script src="./assets/JS/app.js"></script>
+    <script src="./assets/JS/typed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
